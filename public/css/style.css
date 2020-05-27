@@ -10,12 +10,12 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #cc0000; }
+  color: #ff1a1a; }
   a:hover {
     text-decoration: none;
     color: #0000b3; }
   a.link-underline {
-    color:#cc0000;
+    color: #ff1a1a;
     text-decoration: underline; }
     a.link-underline:hover {
       color:#0000b3;
@@ -42,22 +42,41 @@ h1, h2, h3, h4, h5,
       background: #000 !important;
       top: 0;
       position: relative; } }
-  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 14px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #f0f0f0;
-    opacity: 1 !important; }
-    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #fff; }
-    @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 0px;
-        padding-right: 0px; } }
+        font-size: 14px;
+        padding-top: 2.3rem;
+        padding-bottom: 2.3rem;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-weight: 700;
+        color: #000000;
+        position: relative;
+        text-transform: uppercase;
+        opacity: 1 !important; }
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: 0px;
+          left: 0;
+          background-color: #db1b1b;
+          visibility: hidden;
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: all 0.5s ease-in-out 0s;
+          -o-transition: all 0.5s ease-in-out 0s;
+          transition: all 0.5s ease-in-out 0s;
+          z-index: -1; }
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+          color: #db1b1b; }
+          .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
+            visibility: visible;
+            background-color: #db1b1b;
+            -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+            transform: scaleX(1); }
   .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
     position: relative;
     margin-left: 20px;
@@ -119,7 +138,7 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #cc0000 !important; }
+      color: #ff1a1a !important; }
       .ftco-navbar-light.scrolled .nav-item.active > a:before {
         display: none; }
     @media (max-width: 991.98px) {
@@ -147,7 +166,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.9rem !important;
       color: #000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: #cc0000 !important; }
+        color: #ff1a1a !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -246,7 +265,7 @@ h1, h2, h3, h4, h5,
   box-shadow: none; }
 
 .ftco-play-video span {
-  color: #cc0000;
+  color: #ff1a1a;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
@@ -255,7 +274,7 @@ h1, h2, h3, h4, h5,
   display: inline-block;
   width: 50px;
   height: 50px;
-  color: #cc0000;
+  color: #ff1a1a;
   border: 1px solid #fff;
   position: relative;
   border-radius: 50%; }
@@ -341,8 +360,8 @@ h1, h2, h3, h4, h5,
       background: #000;
       color: #fff; }
   .btn.btn-primary {
-    background: #cc0000;
-    border: 2px solid #cc0000;
+    background:#ff1a1a;
+    border: 2px solid#ff1a1a;
     color: #fff; }
     .btn.btn-primary:hover {
       border: 2px solid #f7ca44;
@@ -1075,7 +1094,7 @@ textarea.form-control {
 
 .block-6 .icon {
   margin-right: 30px;
-  color: #f7ca44; }
+  color: #ff1a1a; }
   .block-6 .icon span:before {
     font-size: 50px; }
   .block-6 .icon span.bg-after:after {
@@ -1616,13 +1635,14 @@ textarea.form-control {
 
 .block-23 ul li .icon, .block-23 ul li .text {
   display: table-cell;
-  vertical-align: top; }
+  vertical-align: top;
+  color: #fff; }
 
 .block-23 ul li .icon {
   width: 40px;
   font-size: 18px;
   padding-top: 2px;
-  color: #f7ca44; }
+  color: #ff1a1a; }
 
 .img-hover {
   position: relative;

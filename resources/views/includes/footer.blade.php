@@ -5,7 +5,7 @@
           <h3 class="heading-section">About Us</h3>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
           <p class="mb-5">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p><a href="#" class="link-underline">Read  More</a></p>
+          <p><a href="{{route('about')}}" class="link-underline" style="color:#cc0000;">Read  More</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Recent Blog</h3>

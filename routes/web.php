@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::view('/','pages.index')->name('index');
+Route::view('/about','pages.about')->name('about');
+Route::view('/event','pages.event')->name('event');
